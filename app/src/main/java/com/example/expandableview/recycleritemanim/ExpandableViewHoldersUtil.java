@@ -54,6 +54,10 @@ public class ExpandableViewHoldersUtil {
         this.needExplanedOnlyOne = needExplanedOnlyOne;
     }
 
+    public static boolean isExpaned(int index){
+        return explanedList.contains(index + "");
+    }
+
     private void addPositionInExpaned(int pos) {
         if (!explanedList.contains(pos + "")) {
             explanedList.add(pos + "");

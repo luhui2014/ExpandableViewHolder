@@ -115,10 +115,12 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:lineSpacingMultiplier="1.2"
-                android:maxLines="1"
                 android:textColor="#333333"
                 android:textSize="12sp"
-                android:text="中美经贸磋商最新进展"/>
+                android:text="中美经贸磋商最新进展中美经贸磋商
+                最新进展中美经贸磋商最新进展中美经贸磋商最新进展中美经贸
+                磋商最新进展中美经贸磋商最新进展中美经贸磋商最新进展中美经
+                贸磋商最新进展中美经贸磋商最新进展中美经贸磋商最新进展中美经贸磋商最新进展中美经贸磋商最新进展"/>
 
         </LinearLayout>
 

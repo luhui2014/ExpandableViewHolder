@@ -68,7 +68,7 @@ public class ExPandableViewActivity extends AppCompatActivity {
         }
 
         @Override
-        public void onBindViewHolder(@NonNull final ViewHolder viewHolder, int position) {
+        public void onBindViewHolder(@NonNull final ViewHolder viewHolder, final int position) {
 
             viewHolder.tvTitle.setText("中美经贸磋商 po=" + position);
 
@@ -77,6 +77,11 @@ public class ExPandableViewActivity extends AppCompatActivity {
             viewHolder.tvTitle.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+//                    if(ExpandableViewHoldersUtil.isExpaned(position)){
+//                        viewHolder.contentTv.setMaxLines(3);
+//                    }else {
+//                        viewHolder.contentTv.setMaxLines(100);
+//                    }
                     keepOne.toggle(viewHolder);
                 }
             });
@@ -95,6 +100,7 @@ public class ExPandableViewActivity extends AppCompatActivity {
         ImageView arrowImage;
         LinearLayout lvArrorwBtn;
         LinearLayout lvLinearlayout;
+        TextView contentTv;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -103,6 +109,7 @@ public class ExPandableViewActivity extends AppCompatActivity {
             lvLinearlayout = itemView.findViewById(R.id.item_user_concern_link_layout);
             lvArrorwBtn = itemView.findViewById(R.id.item_user_concern_arrow);
             arrowImage = itemView.findViewById(R.id.item_user_concern_arrow_image);
+            contentTv = itemView.findViewById(R.id.item_user_concern_link_text);
 
             keepOne = ExpandableViewHoldersUtil.getInstance().getKeepOneHolder();
 

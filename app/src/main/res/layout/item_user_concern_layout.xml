@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingTop="24dp"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:id="@+id/item_user_concern_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="12dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/item_user_concern_follow_btn"
+        android:layout_width="64dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="17dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/item_user_concern_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/item_user_concern_follow_btn"
+        android:layout_toRightOf="@+id/item_user_concern_image"
+        android:maxLines="1"
+        android:textColor="#333333"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:text="中美经贸磋商最新进展" />
+
+    <TextView
+        android:id="@+id/item_user_concern_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_user_concern_title"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/item_user_concern_follow_btn"
+        android:layout_toRightOf="@+id/item_user_concern_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#AAB0BB"
+        android:textSize="12sp"
+        android:text="中美经贸磋商最新进展" />
+
+    <TextView
+        android:id="@+id/item_user_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_user_concern_desc"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/item_user_concern_image"
+        android:textColor="#AAB0BB"
+        android:textSize="11sp"
+        android:text="17:38" />
+
+    <LinearLayout
+        android:id="@+id/item_user_concern_arrow"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_user_concern_desc"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/item_user_time"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="6dp"
+        android:paddingTop="3dp">
+
+        <ImageView
+            android:id="@+id/item_user_concern_arrow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_user_concern_link_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_user_time"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/item_user_concern_image"
+        android:background="@drawable/shape_reactange_light_white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp">
+
+            <View
+                android:id="@+id/item_user_concern_link_oval"
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/roll_shape_rectangle" />
+
+            <TextView
+                android:id="@+id/item_user_concern_link_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="1"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                android:text="中美经贸磋商最新进展"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_user_concern_linkEra_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

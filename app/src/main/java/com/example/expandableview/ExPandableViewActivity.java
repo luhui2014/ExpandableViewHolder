@@ -81,7 +81,7 @@ public class ExPandableViewActivity extends AppCompatActivity {
                 }
             });
 
-            viewHolder.arrowImage.setOnClickListener(new View.OnClickListener() {
+            viewHolder.lvArrorwBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     keepOne.toggle(viewHolder);
